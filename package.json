@@ -1,0 +1,14 @@
+{
+  "name": "go2x-progress",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-progress.mjs",
+    "test": "node scripts/validate-progress.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

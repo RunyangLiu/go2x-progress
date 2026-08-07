@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "Go2X 二次开发进展",
+    "repository": "RunyangLiu/go2x-progress",
+    "robot": "Unitree Go2X",
+    "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
+    "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
+  },
+  "updatedAt": "2026-08-05T11:57:20Z",
+  "metrics": {
+    "total": 9,
+    "counts": {
+      "done": 6,
+      "doing": 1,
+      "blocked": 1,
+      "planned": 1
+    },
+    "completionPercent": 67
+  },
+  "items": [
+    {
+      "id": "network-dds",
+      "title": "实机网络与 DDS 通信",
+      "area": "基础环境",
+      "status": "done",
+      "summary": "开发机与 Go2X 已进入同一网段，能够通过有线链路交换控制与遥测数据。",
+      "evidence": [
+        {
+          "date": "2026-07-17",
+          "statement": "用户确认网络 ping 已通过。"
+        },
+        {
+          "date": "2026-07-21",
+          "statement": "用户确认 DDS 通信阶段完成。"
+        }
+      ],
+      "nextStep": "保持网卡与 CycloneDDS 配置可复现，并记录每次开机检查结果。",
+      "observedAt": "2026-07-21T03:07:34Z",
+      "issue": null
+    },
+    {
+      "id": "sdk-ros-runtime",
+      "title": "SDK2 与 ROS 2 开发环境",
+      "area": "基础环境",
+      "status": "done",
+      "summary": "Ubuntu、Unitree SDK2、ROS 2 Humble 与 CycloneDDS 已形成可用的开发运行环境。",
+      "evidence": [
+        {
+          "date": "2026-07-18",
+          "statement": "用户确认 ROS 2 已安装，并继续进行 Go2X 开发。"
+        },
+        {
+          "date": "2026-07-19",
+          "statement": "会话确认 SDK2、ROS 2 与机器狗网卡均已配置。"
+        }
+      ],
+      "nextStep": "把环境检查命令固化成一键诊断脚本。",
+      "observedAt": "2026-07-19T06:10:00Z",
+      "issue": null
+    },
+    {
+      "id": "python-interface",
+      "title": "Go2 Python 服务接口",
+      "area": "开发接口",
+      "status": "done",
+      "summary": "已完成 Python SDK 接口安装流程，并形成可复用的新手操作说明。",
+      "evidence": [
+        {
+          "date": "2026-07-20",
+          "statement": "开始按宇树官方文档配置 Go2X Python 接口。"
+        },
+        {
+          "date": "2026-07-30",
+          "statement": "Python 服务接口操作说明与验证材料已生成。"
+        }
+      ],
+      "nextStep": "补充接口健康检查和异常恢复示例。",
+      "observedAt": "2026-07-30T08:49:38Z",
+      "issue": null
+    },
+    {
+      "id": "motion-control",
+      "title": "ROS 2 移动控制闭环",
+      "area": "运动控制",
+      "status": "done",
+      "summary": "已编写移动控制程序，Go2X 可以按照代码执行对应运动命令。",
+      "evidence": [
+        {
+          "date": "2026-07-21",
+          "statement": "用户明确确认机器狗能够按照代码执行对应命令。"
+        }
+      ],
+      "nextStep": "加入速度限幅、超时停车、状态确认和急停保护。",
+      "observedAt": "2026-07-21T07:55:26Z",
+      "issue": null
+    },
+    {
+      "id": "simulation-2d-slam",
+      "title": "2D SLAM 仿真流程",
+      "area": "仿真与建图",
+      "status": "done",
+      "summary": "已跑通 Gazebo、RViz 与 2D SLAM 的仿真建图和地图保存流程。",
+      "evidence": [
+        {
+          "date": "2026-07-23",
+          "statement": "完成无实机条件下的 2D SLAM 仿真学习。"
+        },
+        {
+          "date": "2026-07-29",
+          "statement": "仿真建图步骤与配图文档已整理。"
+        }
+      ],
+      "nextStep": "复用仿真中的 topic、TF 和导航概念到 Go2X 实机链路。",
+      "observedAt": "2026-07-29T08:37:50Z",
+      "issue": null
+    },
+    {
+      "id": "l2-data-pipeline",
+      "title": "L2 点云与 IMU 数据链路",
+      "area": "感知与建图",
+      "status": "done",
+      "summary": "L2 点云、IMU、里程计和机器人位姿已可在 ROS 2 中读取，数据频率达到算法调试条件。",
+      "evidence": [
+        {
+          "date": "2026-08-01",
+          "statement": "点云约 15 Hz、IMU 约 249 Hz，记录中丢包率为 0。"
+        },
+        {
+          "date": "2026-08-01",
+          "statement": "robot_pose 与 robot_odom 可正常输出。"
+        }
+      ],
+      "nextStep": "把话题频率、时间戳差和 TF 完整性纳入自动健康检查。",
+      "observedAt": "2026-08-01T14:54:22Z",
+      "issue": null
+    },
+    {
+      "id": "fastlio2-integration",
+      "title": "FAST-LIO2 初步集成",
+      "area": "感知与建图",
+      "status": "doing",
+      "summary": "FAST-LIO2 已能消费 Go2X L2 数据并输出注册点云，静止状态下已有初步三维建图结果。",
+      "evidence": [
+        {
+          "date": "2026-08-01",
+          "statement": "cloud_registered 约 15 Hz，RViz 能显示 FAST-LIO2 输出。"
+        },
+        {
+          "date": "2026-08-02",
+          "statement": "两周 FAST-LIO2 调试过程与初步结果已形成周报。"
+        }
+      ],
+      "nextStep": "完成移动状态下的稳定性验证，并形成可重复的启动与参数配置。",
+      "observedAt": "2026-08-02T02:48:21Z",
+      "issue": null
+    },
+    {
+      "id": "lidar-imu-calibration",
+      "title": "移动漂移与外参适配",
+      "area": "感知与建图",
+      "status": "blocked",
+      "summary": "当前主要阻塞是机器狗移动后点云漂移，证据指向 L2 的 LiDAR/IMU 外参、坐标方向与 ROS 2 LIO 适配。",
+      "evidence": [
+        {
+          "date": "2026-08-01",
+          "statement": "静止时有图，移动后出现明显漂移。"
+        },
+        {
+          "date": "2026-08-01",
+          "statement": "数据链路正常，但缺少经过验证的 LiDAR/IMU 真实外参与 TF。"
+        }
+      ],
+      "nextStep": "获取或标定 L2 外参，并比较 ROS 2 FAST-LIO2 适配与 L2 专用 LIO 路线。",
+      "observedAt": "2026-08-05T11:55:31Z",
+      "issue": null
+    },
+    {
+      "id": "active-observation-research",
+      "title": "主动观测与运动控制研究验证",
+      "area": "研究方向",
+      "status": "planned",
+      "summary": "研究方向已收敛到室内巡检中的视觉置信度驱动主动观测与运动控制，尚待建立最小实验。",
+      "evidence": [
+        {
+          "date": "2026-08-05",
+          "statement": "方向从单纯建图问题调整为 AI、控制与巡检场景结合的小而精课题。"
+        }
+      ],
+      "nextStep": "选择一个低置信度巡检目标，验证机器人主动调整观察位姿是否提高识别可靠性。",
+      "observedAt": "2026-08-05T11:57:20Z",
+      "issue": null
+    }
+  ],
+  "recentCommits": [],
+  "quality": {
+    "status": "local",
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/workflows/progress.yml"
+  },
+  "automation": {
+    "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
+    "pagesUrl": "https://runyangliu.github.io/go2x-progress/",
+    "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
+  }
+}
