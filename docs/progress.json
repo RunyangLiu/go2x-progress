@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-07T08:17:43Z",
+  "updatedAt": "2026-08-07T08:17:49Z",
   "metrics": {
     "total": 9,
     "counts": {
@@ -61,7 +61,11 @@
       ],
       "nextStep": "把环境检查命令固化成一键诊断脚本。",
       "observedAt": "2026-07-19T06:10:00Z",
-      "issue": null
+      "issue": {
+        "number": 2,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/2",
+        "updatedAt": "2026-08-07T08:17:44Z"
+      }
     },
     {
       "id": "python-interface",
@@ -81,7 +85,11 @@
       ],
       "nextStep": "补充接口健康检查和异常恢复示例。",
       "observedAt": "2026-07-30T08:49:38Z",
-      "issue": null
+      "issue": {
+        "number": 3,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/3",
+        "updatedAt": "2026-08-07T08:17:45Z"
+      }
     },
     {
       "id": "motion-control",
@@ -97,7 +105,11 @@
       ],
       "nextStep": "加入速度限幅、超时停车、状态确认和急停保护。",
       "observedAt": "2026-07-21T07:55:26Z",
-      "issue": null
+      "issue": {
+        "number": 4,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/4",
+        "updatedAt": "2026-08-07T08:17:46Z"
+      }
     },
     {
       "id": "simulation-2d-slam",
@@ -117,7 +129,11 @@
       ],
       "nextStep": "复用仿真中的 topic、TF 和导航概念到 Go2X 实机链路。",
       "observedAt": "2026-07-29T08:37:50Z",
-      "issue": null
+      "issue": {
+        "number": 5,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/5",
+        "updatedAt": "2026-08-07T08:17:47Z"
+      }
     },
     {
       "id": "l2-data-pipeline",
@@ -137,7 +153,11 @@
       ],
       "nextStep": "把话题频率、时间戳差和 TF 完整性纳入自动健康检查。",
       "observedAt": "2026-08-01T14:54:22Z",
-      "issue": null
+      "issue": {
+        "number": 6,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/6",
+        "updatedAt": "2026-08-07T08:17:48Z"
+      }
     },
     {
       "id": "fastlio2-integration",
@@ -157,7 +177,11 @@
       ],
       "nextStep": "完成移动状态下的稳定性验证，并形成可重复的启动与参数配置。",
       "observedAt": "2026-08-02T02:48:21Z",
-      "issue": null
+      "issue": {
+        "number": 7,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/7",
+        "updatedAt": "2026-08-07T08:17:49Z"
+      }
     },
     {
       "id": "lidar-imu-calibration",
@@ -177,7 +201,11 @@
       ],
       "nextStep": "获取或标定 L2 外参，并比较 ROS 2 FAST-LIO2 适配与 L2 专用 LIO 路线。",
       "observedAt": "2026-08-05T11:55:31Z",
-      "issue": null
+      "issue": {
+        "number": 8,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/8",
+        "updatedAt": "2026-08-07T08:17:49Z"
+      }
     },
     {
       "id": "active-observation-research",
@@ -193,10 +221,20 @@
       ],
       "nextStep": "选择一个低置信度巡检目标，验证机器人主动调整观察位姿是否提高识别可靠性。",
       "observedAt": "2026-08-05T11:57:20Z",
-      "issue": null
+      "issue": {
+        "number": 9,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/9",
+        "updatedAt": "2026-08-07T08:17:49Z"
+      }
     }
   ],
   "recentCommits": [
+    {
+      "sha": "85202a0",
+      "message": "fix: enable Pages deployment in Actions",
+      "date": "2026-08-07T08:35:01Z",
+      "url": "https://github.com/RunyangLiu/go2x-progress/commit/85202a0d4e91665387fa3e235649d13a7bc91743"
+    },
     {
       "sha": "9342857",
       "message": "feat: publish Go2X progress dashboard",
@@ -205,8 +243,8 @@
     }
   ],
   "quality": {
-    "status": "pending",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/workflows/progress.yml"
+    "status": "failure",
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31161083840"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
