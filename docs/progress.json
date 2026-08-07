@@ -243,8 +243,8 @@
     }
   ],
   "quality": {
-    "status": "failure",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31161083840"
+    "status": "success",
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31162481701"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
