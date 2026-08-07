@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-05T11:57:20Z",
+  "updatedAt": "2026-08-07T08:17:43Z",
   "metrics": {
     "total": 9,
     "counts": {
@@ -37,7 +37,11 @@
       ],
       "nextStep": "保持网卡与 CycloneDDS 配置可复现，并记录每次开机检查结果。",
       "observedAt": "2026-07-21T03:07:34Z",
-      "issue": null
+      "issue": {
+        "number": 1,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/1",
+        "updatedAt": "2026-08-07T08:17:43Z"
+      }
     },
     {
       "id": "sdk-ros-runtime",
@@ -192,9 +196,16 @@
       "issue": null
     }
   ],
-  "recentCommits": [],
+  "recentCommits": [
+    {
+      "sha": "9342857",
+      "message": "feat: publish Go2X progress dashboard",
+      "date": "2026-08-07T08:15:41Z",
+      "url": "https://github.com/RunyangLiu/go2x-progress/commit/9342857d62f4f54d38d156cbfedcba5347763fb8"
+    }
+  ],
   "quality": {
-    "status": "local",
+    "status": "pending",
     "url": "https://github.com/RunyangLiu/go2x-progress/actions/workflows/progress.yml"
   },
   "automation": {
