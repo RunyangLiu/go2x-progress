@@ -18,7 +18,7 @@
 | [L2 点云与 IMU 数据链路](https://github.com/RunyangLiu/go2x-progress/issues/6) | 感知与建图 | 已完成 | 把话题频率、时间戳差和 TF 完整性纳入自动健康检查。 |
 | [FAST-LIO2 初步集成](https://github.com/RunyangLiu/go2x-progress/issues/7) | 感知与建图 | 进行中 | 完成移动状态下的稳定性验证，并形成可重复的启动与参数配置。 |
 | [移动漂移与外参适配](https://github.com/RunyangLiu/go2x-progress/issues/8) | 感知与建图 | 阻塞 | 获取或标定 L2 外参，并比较 ROS 2 FAST-LIO2 适配与 L2 专用 LIO 路线。 |
-| [主动观测与运动控制研究验证](https://github.com/RunyangLiu/go2x-progress/issues/9) | 研究方向 | 计划 | 选择一个低置信度巡检目标，验证机器人主动调整观察位姿是否提高识别可靠性。 |
+| [主动观测与运动控制研究验证](https://github.com/RunyangLiu/go2x-progress/issues/9) | 研究方向 | 计划 | 补齐摄像头或视频流接入，跑通 YOLO 巡检目标检测，再用低速小范围实验验证主动观测控制。 |
 
 ## 数据边界
 
