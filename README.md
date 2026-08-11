@@ -13,7 +13,7 @@
 | [实机网络与 DDS 通信](https://github.com/RunyangLiu/go2x-progress/issues/1) | 基础环境 | 已完成 | 保持网卡与 CycloneDDS 配置可复现，并记录每次开机检查结果。 |
 | [SDK2 与 ROS 2 开发环境](https://github.com/RunyangLiu/go2x-progress/issues/2) | 基础环境 | 已完成 | 把环境检查命令固化成一键诊断脚本。 |
 | [Go2 Python 服务接口](https://github.com/RunyangLiu/go2x-progress/issues/3) | 开发接口 | 已完成 | 补充接口健康检查和异常恢复示例。 |
-| [ROS 2 移动控制闭环](https://github.com/RunyangLiu/go2x-progress/issues/4) | 运动控制 | 已完成 | 加入速度限幅、超时停车、状态确认和急停保护。 |
+| [ROS 2 移动控制闭环](https://github.com/RunyangLiu/go2x-progress/issues/4) | 运动控制 | 已完成 | 在实机建图采集中验证键盘控制脚本，并记录速度档位、停止响应和人工接管流程。 |
 | [2D SLAM 仿真流程](https://github.com/RunyangLiu/go2x-progress/issues/5) | 仿真与建图 | 已完成 | 复用仿真中的 topic、TF 和导航概念到 Go2X 实机链路。 |
 | [L2 点云与 IMU 数据链路](https://github.com/RunyangLiu/go2x-progress/issues/6) | 感知与建图 | 已完成 | 把话题频率、时间戳差和 TF 完整性纳入自动健康检查。 |
 | [FAST-LIO2 初步集成](https://github.com/RunyangLiu/go2x-progress/issues/7) | 感知与建图 | 进行中 | 完成移动状态下的稳定性验证，并形成可重复的启动与参数配置。 |
