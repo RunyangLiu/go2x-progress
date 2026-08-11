@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-11T00:43:05Z",
+  "updatedAt": "2026-08-11T01:37:02Z",
   "metrics": {
     "total": 9,
     "counts": {
@@ -96,19 +96,15 @@
       "title": "ROS 2 移动控制闭环",
       "area": "运动控制",
       "status": "done",
-      "summary": "已编写移动控制程序，Go2X 可以按照代码执行对应运动命令；面向建图采集新增低速键盘控制脚本，包含速度档位、按键释放停车、短步进和紧急停止逻辑。",
+      "summary": "已编写移动控制程序，Go2X 可以按照代码执行对应运动命令。",
       "evidence": [
         {
           "date": "2026-07-21",
           "statement": "用户明确确认机器狗能够按照代码执行对应命令。"
-        },
-        {
-          "date": "2026-08-10",
-          "statement": "新增 go2_mapping_keyboard.py，使用 Unitree SDK2 Python SportClient，提供低速、短步进、速度预设、按键释放 StopMove 和 emergency stop，用于 SLAM 数据采集。"
         }
       ],
-      "nextStep": "在实机建图采集中验证键盘控制脚本，并记录速度档位、停止响应和人工接管流程。",
-      "observedAt": "2026-08-10T09:36:07Z",
+      "nextStep": "加入速度限幅、超时停车、状态确认和急停保护。",
+      "observedAt": "2026-07-21T07:55:26Z",
       "issue": {
         "number": 4,
         "url": "https://github.com/RunyangLiu/go2x-progress/issues/4",
@@ -129,14 +125,18 @@
         {
           "date": "2026-07-29",
           "statement": "仿真建图步骤与配图文档已整理。"
+        },
+        {
+          "date": "2026-08-10",
+          "statement": "用户纠正确认当天实际推进的是 2D 建图相关工作，Nav2 定位导航尚未安装或跑通。"
         }
       ],
-      "nextStep": "复用仿真中的 topic、TF 和导航概念到 Go2X 实机链路。",
-      "observedAt": "2026-07-29T08:37:50Z",
+      "nextStep": "继续补准 2D 建图步骤；Nav2 安装、定位和导航跑通后再单独记录。",
+      "observedAt": "2026-08-10T09:40:00Z",
       "issue": {
         "number": 5,
         "url": "https://github.com/RunyangLiu/go2x-progress/issues/5",
-        "updatedAt": "2026-08-07T08:17:47Z"
+        "updatedAt": "2026-08-11T01:37:02Z"
       }
     },
     {
@@ -254,6 +254,12 @@
   ],
   "recentCommits": [
     {
+      "sha": "c1e3fa7",
+      "message": "fix: correct Go2X August 10 progress",
+      "date": "2026-08-11T01:35:54Z",
+      "url": "https://github.com/RunyangLiu/go2x-progress/commit/c1e3fa77b7650f8207bbffacefa01ca84ca9e2fd"
+    },
+    {
       "sha": "5dc3c58",
       "message": "chore: update Go2X control observations",
       "date": "2026-08-11T00:33:58Z",
@@ -270,17 +276,11 @@
       "message": "fix: enable Pages deployment in Actions",
       "date": "2026-08-07T08:35:01Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/85202a0d4e91665387fa3e235649d13a7bc91743"
-    },
-    {
-      "sha": "9342857",
-      "message": "feat: publish Go2X progress dashboard",
-      "date": "2026-08-07T08:15:41Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/9342857d62f4f54d38d156cbfedcba5347763fb8"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31398740689"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31446978749"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
