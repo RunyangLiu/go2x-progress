@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-11T06:04:57Z",
+  "updatedAt": "2026-08-12T00:44:51Z",
   "metrics": {
     "total": 10,
     "counts": {
@@ -161,7 +161,11 @@
       ],
       "nextStep": "先验证 go2_return_to_pose.py 的小范围闭环回点；Nav2 需要先确认安装并单独验证 /cmd_vel 到 Go2 的桥接，再决定是否继续 2D 闭环或转向 3D LIO 主线。",
       "observedAt": "2026-08-11T06:04:57Z",
-      "issue": null
+      "issue": {
+        "number": 10,
+        "url": "https://github.com/RunyangLiu/go2x-progress/issues/10",
+        "updatedAt": "2026-08-12T00:44:51Z"
+      }
     },
     {
       "id": "l2-data-pipeline",
@@ -304,7 +308,7 @@
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31502066585"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31551263664"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
