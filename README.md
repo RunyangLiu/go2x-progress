@@ -15,7 +15,7 @@
 | [Go2 Python 服务接口](https://github.com/RunyangLiu/go2x-progress/issues/3) | 开发接口 | 已完成 | 补充接口健康检查和异常恢复示例。 |
 | [ROS 2 移动控制闭环](https://github.com/RunyangLiu/go2x-progress/issues/4) | 运动控制 | 已完成 | 加入速度限幅、超时停车、状态确认和急停保护。 |
 | [2D SLAM 仿真流程](https://github.com/RunyangLiu/go2x-progress/issues/5) | 仿真与建图 | 已完成 | 继续补准 2D 建图步骤；Nav2 安装、定位和导航跑通后再单独记录。 |
-| [2D 实物建图与地图定位链路](https://github.com/RunyangLiu/go2x-progress/issues/10) | 仿真与建图 | 进行中 | 上机验证 deskewed scan 的 effective_bins、地图轮廓和路径稳定性；若稳定版地图仍不可靠，优先录制标准 L2 bag 并推进 3D LIO 主线。 |
+| [2D 实物建图与地图定位链路](https://github.com/RunyangLiu/go2x-progress/issues/10) | 仿真与建图 | 进行中 | 优先排查 2D 建图拖影：检查 scan 投影时序、odom/TF 对齐、运动速度和 slam_toolbox 参数；Nav2 安装与目标点导航需等地图质量稳定后再单独验证。 |
 | [L2 点云与 IMU 数据链路](https://github.com/RunyangLiu/go2x-progress/issues/6) | 感知与建图 | 已完成 | 把话题频率、时间戳差和 TF 完整性纳入自动健康检查。 |
 | [FAST-LIO2 初步集成](https://github.com/RunyangLiu/go2x-progress/issues/7) | 感知与建图 | 进行中 | 完成移动状态下的稳定性验证，并形成可重复的启动与参数配置。 |
 | [移动漂移与外参适配](https://github.com/RunyangLiu/go2x-progress/issues/8) | 感知与建图 | 阻塞 | 获取或标定 L2 外参，并比较 ROS 2 FAST-LIO2 适配与 L2 专用 LIO 路线。 |

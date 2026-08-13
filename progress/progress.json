@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-13T00:56:16Z",
+  "updatedAt": "2026-08-13T01:07:08Z",
   "metrics": {
     "total": 10,
     "counts": {
@@ -144,7 +144,7 @@
       "title": "2D 实物建图与地图定位链路",
       "area": "仿真与建图",
       "status": "doing",
-      "summary": "Go2 L2 点云投影到 /scan 后接入 slam_toolbox，已形成 /map、/go2_pose_in_map、/go2_actual_path 和 RViz 显示链路；小范围直角路线比前一天正常，但仍存在闭合误差，Nav2 导航尚未实证跑通。",
+      "summary": "Go2 L2 点云投影到 /scan 后接入 slam_toolbox，已形成 /map、/go2_pose_in_map、/go2_actual_path 和 RViz 显示链路；2026-08-12 已确认 2D 建图能实现，但地图/点云效果存在拖影，Nav2 导航尚未实证跑通。",
       "evidence": [
         {
           "date": "2026-08-11",
@@ -165,14 +165,18 @@
         {
           "date": "2026-08-12",
           "statement": "稳定版 slam_toolbox 参数明确禁用 2D 回环，启动脚本改为使用 deskewed scan 路线，降低伪 2D scan 自动闭环误匹配风险。"
+        },
+        {
+          "date": "2026-08-12",
+          "statement": "用户纠正确认当天 2D 建图已经能实现，但存在拖影；该问题应作为建图质量问题继续排查，不能写成 Nav2 定位导航已完成。"
         }
       ],
-      "nextStep": "上机验证 deskewed scan 的 effective_bins、地图轮廓和路径稳定性；若稳定版地图仍不可靠，优先录制标准 L2 bag 并推进 3D LIO 主线。",
-      "observedAt": "2026-08-12T10:30:12Z",
+      "nextStep": "优先排查 2D 建图拖影：检查 scan 投影时序、odom/TF 对齐、运动速度和 slam_toolbox 参数；Nav2 安装与目标点导航需等地图质量稳定后再单独验证。",
+      "observedAt": "2026-08-13T01:02:35Z",
       "issue": {
         "number": 10,
         "url": "https://github.com/RunyangLiu/go2x-progress/issues/10",
-        "updatedAt": "2026-08-13T00:56:16Z"
+        "updatedAt": "2026-08-13T01:07:08Z"
       }
     },
     {
@@ -290,6 +294,12 @@
   ],
   "recentCommits": [
     {
+      "sha": "2554bbe",
+      "message": "chore: record Go2X 2D mapping ghosting",
+      "date": "2026-08-13T01:05:49Z",
+      "url": "https://github.com/RunyangLiu/go2x-progress/commit/2554bbec47fe87eddb928ff2130d52414a3e7d2e"
+    },
+    {
       "sha": "5f3ed98",
       "message": "chore: add Go2X deskewed scan progress",
       "date": "2026-08-13T00:49:48Z",
@@ -312,17 +322,11 @@
       "message": "chore: update Go2X control observations",
       "date": "2026-08-11T00:33:58Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/5dc3c58097ae5ab544d1d322a1676d15de586d02"
-    },
-    {
-      "sha": "97ed950",
-      "message": "chore: update Go2X observations",
-      "date": "2026-08-10T01:24:19Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/97ed950f115b54caa4356f6b212c4da4536a3c72"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31607416001"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31656069381"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
