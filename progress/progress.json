@@ -7,7 +7,7 @@
     "researchDirection": "面向室内巡检的四足机器人视觉置信度驱动主动观测与运动控制",
     "sourcePolicy": "只发布从 Codex 确认记录、代码和实验产物中提炼的脱敏摘要"
   },
-  "updatedAt": "2026-08-12T00:44:51Z",
+  "updatedAt": "2026-08-13T00:56:16Z",
   "metrics": {
     "total": 10,
     "counts": {
@@ -157,14 +157,22 @@
         {
           "date": "2026-08-11",
           "statement": "RViz 已能显示 /map、绿色实际路径、当前位姿和朝向箭头；小范围直角路线能连续更新，但末端回不到起点，仍需定位闭环或路线切换验证。"
+        },
+        {
+          "date": "2026-08-12",
+          "statement": "新增 deskewed 点云转 /scan 节点，使用 /utlidar/cloud_deskewed 与 /utlidar/robot_odom 将 odom 坐标点云转换到 base_link 后投影为 LaserScan，并记录 effective_bins 等诊断指标。"
+        },
+        {
+          "date": "2026-08-12",
+          "statement": "稳定版 slam_toolbox 参数明确禁用 2D 回环，启动脚本改为使用 deskewed scan 路线，降低伪 2D scan 自动闭环误匹配风险。"
         }
       ],
-      "nextStep": "先验证 go2_return_to_pose.py 的小范围闭环回点；Nav2 需要先确认安装并单独验证 /cmd_vel 到 Go2 的桥接，再决定是否继续 2D 闭环或转向 3D LIO 主线。",
-      "observedAt": "2026-08-11T06:04:57Z",
+      "nextStep": "上机验证 deskewed scan 的 effective_bins、地图轮廓和路径稳定性；若稳定版地图仍不可靠，优先录制标准 L2 bag 并推进 3D LIO 主线。",
+      "observedAt": "2026-08-12T10:30:12Z",
       "issue": {
         "number": 10,
         "url": "https://github.com/RunyangLiu/go2x-progress/issues/10",
-        "updatedAt": "2026-08-12T00:44:51Z"
+        "updatedAt": "2026-08-13T00:56:16Z"
       }
     },
     {
@@ -282,6 +290,12 @@
   ],
   "recentCommits": [
     {
+      "sha": "5f3ed98",
+      "message": "chore: add Go2X deskewed scan progress",
+      "date": "2026-08-13T00:49:48Z",
+      "url": "https://github.com/RunyangLiu/go2x-progress/commit/5f3ed98bfc25df5e74e21b74ac7ccb61bab34620"
+    },
+    {
       "sha": "4d24571",
       "message": "chore: add Go2X 2D localization progress",
       "date": "2026-08-12T00:43:50Z",
@@ -308,7 +322,7 @@
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31551263664"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31607416001"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
