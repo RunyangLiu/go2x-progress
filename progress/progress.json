@@ -316,17 +316,11 @@
       "message": "fix: correct Go2X August 10 progress",
       "date": "2026-08-11T01:35:54Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/c1e3fa77b7650f8207bbffacefa01ca84ca9e2fd"
-    },
-    {
-      "sha": "5dc3c58",
-      "message": "chore: update Go2X control observations",
-      "date": "2026-08-11T00:33:58Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/5dc3c58097ae5ab544d1d322a1676d15de586d02"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31656665351"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31710873416"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
