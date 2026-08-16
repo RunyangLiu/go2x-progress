@@ -310,17 +310,11 @@
       "message": "chore: add Go2X 2D localization progress",
       "date": "2026-08-12T00:43:50Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/4d2457156b0fed202f1ac3eee27e1379c1b8b4a8"
-    },
-    {
-      "sha": "c1e3fa7",
-      "message": "fix: correct Go2X August 10 progress",
-      "date": "2026-08-11T01:35:54Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/c1e3fa77b7650f8207bbffacefa01ca84ca9e2fd"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31809594775"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/31888068218"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
