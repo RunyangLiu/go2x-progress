@@ -304,17 +304,11 @@
       "message": "chore: add Go2X deskewed scan progress",
       "date": "2026-08-13T00:49:48Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/5f3ed98bfc25df5e74e21b74ac7ccb61bab34620"
-    },
-    {
-      "sha": "4d24571",
-      "message": "chore: add Go2X 2D localization progress",
-      "date": "2026-08-12T00:43:50Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/4d2457156b0fed202f1ac3eee27e1379c1b8b4a8"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/32037214651"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/32145599805"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
