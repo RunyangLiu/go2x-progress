@@ -298,17 +298,11 @@
       "message": "chore: record Go2X 2D mapping ghosting",
       "date": "2026-08-13T01:05:49Z",
       "url": "https://github.com/RunyangLiu/go2x-progress/commit/2554bbec47fe87eddb928ff2130d52414a3e7d2e"
-    },
-    {
-      "sha": "5f3ed98",
-      "message": "chore: add Go2X deskewed scan progress",
-      "date": "2026-08-13T00:49:48Z",
-      "url": "https://github.com/RunyangLiu/go2x-progress/commit/5f3ed98bfc25df5e74e21b74ac7ccb61bab34620"
     }
   ],
   "quality": {
     "status": "success",
-    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/32377722301"
+    "url": "https://github.com/RunyangLiu/go2x-progress/actions/runs/32489875334"
   },
   "automation": {
     "issueSource": "https://github.com/RunyangLiu/go2x-progress/issues",
